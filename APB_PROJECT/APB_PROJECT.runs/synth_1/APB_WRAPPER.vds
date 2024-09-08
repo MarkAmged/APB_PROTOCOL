@@ -1,0 +1,376 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Sep  8 02:45:27 2024
+# Process ID: 6180
+# Current directory: D:/APB/APB_PROJECT/APB_PROJECT.runs/synth_1
+# Command line: vivado.exe -log APB_WRAPPER.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source APB_WRAPPER.tcl
+# Log file: D:/APB/APB_PROJECT/APB_PROJECT.runs/synth_1/APB_WRAPPER.vds
+# Journal file: D:/APB/APB_PROJECT/APB_PROJECT.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source APB_WRAPPER.tcl -notrace
+Command: synth_design -top APB_WRAPPER -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24472 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 355.984 ; gain = 99.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'APB_WRAPPER' [D:/APB/APB_WRAPPER.v:1]
+INFO: [Synth 8-6157] synthesizing module 'APB_Master' [D:/APB/APB_Master.v:1]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SETUP bound to: 1 - type: integer 
+	Parameter ACCESS bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/APB/APB_Master.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'APB_Master' (1#1) [D:/APB/APB_Master.v:1]
+INFO: [Synth 8-6157] synthesizing module 'APB_Slave' [D:/APB/APB_SLAVE.v:1]
+WARNING: [Synth 8-5788] Register memory_reg in module APB_Slave is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'memory_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "memory_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'APB_Slave' (2#1) [D:/APB/APB_SLAVE.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'APB_WRAPPER' (3#1) [D:/APB/APB_WRAPPER.v:1]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[31]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[30]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[29]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[28]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[27]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[26]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[25]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[24]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[23]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[22]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[21]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[20]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[19]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[18]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[17]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[16]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[15]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[14]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[13]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[12]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[11]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[10]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[9]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[8]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[7]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[6]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[5]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[4]
+WARNING: [Synth 8-3331] design APB_Slave has unconnected port PADDR[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 410.395 ; gain = 153.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 410.395 ; gain = 153.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 410.395 ; gain = 153.785
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/APB/Constraints_basys3.xdc]
+Finished Parsing XDC File [D:/APB/Constraints_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/APB/Constraints_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/APB_WRAPPER_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/APB_WRAPPER_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 766.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 766.879 ; gain = 510.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 766.879 ; gain = 510.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 766.879 ; gain = 510.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'APB_Master'
+INFO: [Synth 8-5544] ROM "PADDR" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PSELx" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PENABLE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                   SETUP |                              010 |                               01
+                  ACCESS |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'APB_Master'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 766.879 ; gain = 510.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 12    
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module APB_Master 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+Module APB_Slave 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[31]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[30]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[29]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[28]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[27]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[26]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[25]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[24]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[23]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[22]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[21]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[20]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[19]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[18]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[17]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[16]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[15]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[14]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[13]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[12]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[11]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[10]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[9]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[8]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[7]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[6]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[5]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[4]) is unused and will be removed from module APB_WRAPPER.
+WARNING: [Synth 8-3332] Sequential element (MASTER/PADDR_reg[3]) is unused and will be removed from module APB_WRAPPER.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 766.879 ; gain = 510.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:13 . Memory (MB): peak = 766.879 ; gain = 510.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:13 . Memory (MB): peak = 770.922 ; gain = 514.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:13 . Memory (MB): peak = 771.594 ; gain = 514.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 771.594 ; gain = 514.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 771.594 ; gain = 514.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 771.594 ; gain = 514.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 771.594 ; gain = 514.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 771.594 ; gain = 514.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 771.594 ; gain = 514.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     1|
+|3     |LUT2  |     2|
+|4     |LUT3  |     4|
+|5     |LUT4  |    11|
+|6     |LUT6  |    64|
+|7     |MUXF7 |    32|
+|8     |FDCE  |   105|
+|9     |FDPE  |     1|
+|10    |FDRE  |   256|
+|11    |IBUF  |    39|
+|12    |OBUF  |    32|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   548|
+|2     |  MASTER |APB_Master |    91|
+|3     |  SLAVE  |APB_Slave  |   385|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 771.594 ; gain = 514.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 771.594 ; gain = 158.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 771.594 ; gain = 514.984
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:20 . Memory (MB): peak = 782.992 ; gain = 539.215
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/APB/APB_PROJECT/APB_PROJECT.runs/synth_1/APB_WRAPPER.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file APB_WRAPPER_utilization_synth.rpt -pb APB_WRAPPER_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.053 . Memory (MB): peak = 782.992 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  8 02:46:53 2024...
